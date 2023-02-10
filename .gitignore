@@ -4,6 +4,7 @@
 .vscode
 /.docker_xfer
 .#*
+/bin/arduino-cli
 /output/
 /examples/*/output/
 /out/
