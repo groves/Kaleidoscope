@@ -53,15 +53,14 @@ $ echo "export KALEIDOSCOPE_DIR=${HOME}/git/Kaleidoscope" >> ${HOME}/.bash_profi
 ```sh
 $ cd examples/Devices/Keyboardio/Atreus
 
-$ make compile
+$ VERBOSE=1 make compile
 ```
 
 5.  Install your firmware
 
-```sh
-$ make flash
-
-```
+Open the directory printed out by the build in Finder.
+Open Chrysalis, update firmware, and select the `Atreus-latest.hex` in the build directory.
+Update!
 
 <3 jesse
 
