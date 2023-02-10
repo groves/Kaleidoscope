@@ -157,6 +157,11 @@ void setup() {
   // can be permanently enabled via Chrysalis, so we should only disable it if
   // no configuration exists.
   SpaceCadetConfig.disableSpaceCadetIfUnconfigured();
+
+  // Disable tap repeat to keep from delaying taps
+  Qukeys.setMaxIntervalForTapRepeat(0);
+  // Increase the overlap threshold from 80% to have fewer accidental layer shifts
+  Qukeys.setOverlapThreshold(90);
 }
 
 void loop() {
