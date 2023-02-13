@@ -160,8 +160,8 @@ void setup() {
 
   // Disable tap repeat to keep from delaying taps
   Qukeys.setMaxIntervalForTapRepeat(0);
-  // Increase the overlap threshold from 80% to have fewer accidental layer shifts
-  Qukeys.setOverlapThreshold(90);
+  // Decrease the overlap threshold from 80% to have fewer missed layer shifts
+  Qukeys.setOverlapThreshold(70);
 }
 
 void loop() {
